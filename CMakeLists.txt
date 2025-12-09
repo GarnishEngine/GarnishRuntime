@@ -12,7 +12,7 @@ file(GLOB_RECURSE SOURCE_FILES CONFIGURE_DEPENDS
     src/*.cc 
 )
 
-add_executable(GarnishRuntime main.cc ${SOURCE_FILES})
+add_executable(GarnishRuntime ${SOURCE_FILES})
 
 target_link_libraries(GarnishRuntime PRIVATE GarnishEngine)
 
